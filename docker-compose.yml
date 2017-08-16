@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: python3 main.py
+    environment:
+      APP_ENV: "test"
+    volumes:
+      - .:/usr/src/app
